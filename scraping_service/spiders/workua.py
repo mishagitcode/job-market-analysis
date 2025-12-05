@@ -17,7 +17,11 @@ WORKUA_URL = "https://www.work.ua"
 class WorkuaSpider(scrapy.Spider):
     name = "workua"
     allowed_domains = ["work.ua", "www.work.ua"]
-    start_urls = ["https://www.work.ua/jobs-it-python"]
+    start_urls = [
+        "https://www.work.ua/jobs-python",
+        "https://www.work.ua/jobs-java",
+        "https://www.work.ua/jobs-javascript"
+    ]
 
     def parse(self, response: Response, **kwargs):
         links_to_job_pages = response.css(".my-0 > a::attr(href)").getall()
