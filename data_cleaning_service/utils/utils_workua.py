@@ -2,11 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def parse_salary(salary_str: str) -> (int, int, int):
-    """
-    Parses salary string into min, max, and average float values.
-    Returns (NaN, NaN, NaN) for missing or invalid data.
-    """
+def parse_salary(salary_str):
     if str(salary_str) == '0' or pd.isna(salary_str):
         return np.nan, np.nan, np.nan
 
