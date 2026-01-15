@@ -80,7 +80,7 @@ Follow these steps to set up the environment and run the analysis on your local 
 
 ### 2. Installation
 
-2.1. Clone the repository and set up the virtual environment:
+2.1. Clone the repository:
 
 ```commandline
 git clone https://github.com/mishagitcode/job-market-analysis.git
@@ -148,3 +148,7 @@ Execute all cells. The final cell will automatically trigger the export script a
 - **Scikit-Learn**: K-Means clustering algorithm.
 
 - **Jupyter & Playwright**: Interactive development and PDF report generation.
+
+---
+
+Developed by [mishagitcode](https://github.com/mishagitcode)
